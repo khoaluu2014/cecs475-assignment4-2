@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HolidaysViewer</title>
+		<link rel="stylesheet" href="./css/site.css" />
+	</head>
+	<body>
+		</header>
+		<div class="container">
+			<main role="main" class="pb-3">
+				<div>
+					<h3 class="display-4">Public Holidays Finder</h3>
+					<center>
+						<form id="holidaysForm">
+							<table>
+								<tr>
+									<td>Country Code:</td>
+									<td>
+										<input
+											type="text"
+											id="txtCountryCode"
+											name="CountryCode"
+											title="CountryCode"
+										/>
+									</td>
+									<td>Year:</td>
+									<td>
+										<input type="text" id="txtYear" name="Year" title="Year" />
+									</td>
+									<td><input type="submit" id="submitBtn" value="Submit" /></td>
+								</tr>
+							</table>
+							<hr />
+						</form>
+					</center>
+					<table class="table table-bordered table-striped table-sm">
+						<thead>
+							<tr>
+								<th>Date</th>
+								<th>Name</th>
+								<th>Local Name</th>
+								<th>Country Code</th>
+								<th>Global</th>
+							</tr>
+						</thead>
+						<tbody id="holidaysTable"></tbody>
+					</table>
+				</div>
+			</main>
+		</div>
+
+		<footer class="border-top footer text-muted">
+			<div class="container">
+				&copy; 2023 - HolidaysViewer - <a href="/privacy">Privacy</a>
+			</div>
+		</footer>
+		<script src="./js/site.js"></script>
+	</body>
+</html>
